@@ -22,9 +22,9 @@ character   = "▏"
 skip-levels = 1
 
 [editor.statusline]
-mode.select = "select"
 mode.normal = "normal"
 mode.insert = "insert"
+mode.select = "select"
 center      = [ "version-control" ]
 
 [keys.normal]

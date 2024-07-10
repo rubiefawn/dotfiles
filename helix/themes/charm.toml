@@ -1,0 +1,47 @@
+
+"keyword" = { fg = "x099", modifiers = [ "bold" ] }
+
+"diff.plus" = "x085"
+"diff.minus" = "x205"
+"diff.delta" = "x221"
+
+"ui.background" = { bg = "x233" }
+"ui.selection" = { bg = "x241" }
+
+"ui.statusline" = { bg = "x233", fg = "x152" }
+"ui.statusline.inactive" = { bg = "x233", fg = "x152", modifiers = [ "dim" ] }
+"ui.statusline.normal" = { bg = "x152", fg = "x233", modifiers = [ "bold" ] }
+"ui.statusline.insert" = { bg = "x177", fg = "x233", modifiers = [ "bold" ] }
+"ui.statusline.select" = { bg = "x221", fg = "x233", modifiers = [ "bold" ] }
+
+"ui.popup" = { bg = "x236" }
+"ui.menu" = { bg = "x236" }
+"ui.menu.selected" = { fg = "x152", modifiers = [ "bold" ], underline.style = "dotted" }
+
+"ui.linenr" = { fg = "x241", modifiers = [ "italic" ] }
+"ui.linenr.selected" = { fg = "x241", modifiers = [ "bold", "italic" ] }
+
+"ui.help" = { bg = "x233", fg = "x152" }
+"ui.virtual.ruler" = { bg = "x236" }
+
+[palette]
+x044 = "#00d7d7" # DarkTurquoise
+x050 = "#00ffd7" # Cyan2
+x085 = "#5fffaf" # SeaGreen1
+x093 = "#8700ff" # Purple
+x099 = "#874fff" # SlateBlue1
+x152 = "#afd7d7" # LightCyan3
+x156 = "#afff87" # PaleGreen1
+x165 = "#d700ff" # Magenta2
+x177 = "#d787ff" # Violet
+x190 = "#d7ff00" # Yellow2
+x198 = "#ff0087" # DeepPink1
+x205 = "#ff5fd7" # HotPink
+x210 = "#ff8787" # LightCoral
+x212 = "#ff87d7" # Orchid2
+x221 = "#ffd75f" # LightGoldenrod2
+x223 = "#ffd7af" # NavajoWhite1
+x233 = "#121212" # Grey7
+x236 = "#303030" # Grey19
+x241 = "#626262" # Grey39
+x253 = "#dadada" # Grey93
