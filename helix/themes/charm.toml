@@ -84,3 +84,23 @@ x233 = "#121212" # Grey7
 x236 = "#303030" # Grey19
 x241 = "#626262" # Grey39
 x253 = "#dadada" # Grey93
+
+darkest  = "#0f0f0f"
+darker   = "#1d1d1d"
+dark     = "#383838"
+light    = "#696969"
+lighter  = "#bdbdbd"
+lightest = "#dadada"
+
+red0    = "#ff3438"
+red1    = "#ff5f79"
+green0  = "#00d18d"
+green1  = "#62ecae"
+yellow0 = "#ffa747"
+yellow1 = "#ffca7f"
+violet0 = "#a565ff"
+violet1 = "#ceb5ff"
+pink0   = "#f74fcf"
+pink1   = "#f99bd1"
+blue0   = "#00c8da"
+blue1   = "#4edaec"
