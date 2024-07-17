@@ -1,89 +1,85 @@
-"attribute" = "x223"
+"attribute" = "NavajoWhite1"
 
-"constructor" = "0x50"
+# "constructor" = ""
 
-"type" = "x050"
-"type.parameter" = { fg = "x080", modifiers = [ "italic" ] }
+"type" = "Cyan2"
+"type.parameter" = { fg = "MediumTurquoise", modifiers = [ "italic" ] }
 
-"constant" = "x221"
-"constant.builtin" = "x177"
-"constant.character.escape" = "x075"
+"constant" = "LightGoldenrod2"
+"constant.builtin" = "Violet"
+"constant.character.escape" = "SteelBlue1"
 
-"string" = "x210"
-"string.regexp" = "x190"
-"string.special" = { fg = "x152", underline.style = "line" }
+"string" = "LightCoral"
+"string.regexp" = "Yellow2"
+"string.special" = { fg = "LightCyan3", underline.style = "line" }
 
-"comment" = { fg = "x241", modifiers = [ "italic" ] }
-"comment.block.documentation" = "x241"
+"comment" = { fg = "Grey39", modifiers = [ "italic" ] }
+"comment.block.documentation" = "Grey39"
 
-"variable" = "x075"
-"variable.builtin" = { fg = "x075", modifiers = [ "italic" ] }
-"variable.other" = "x223"
+"variable" = "SteelBlue1"
+"variable.builtin" = { fg = "SteelBlue1", modifiers = [ "italic" ] }
+"variable.other" = "NavajoWhite1"
 
-"label" = { fg = "x080", modifiers = [ "italic" ] }
+"label" = { fg = "MediumTurquoise", modifiers = [ "italic" ] }
 
-"keyword" = "x177"
-"keyword.control" = { fg = 'x177', modifiers = [ "bold" ] }
-"keyword.storage" = { fg = "x099", modifiers = [ "bold" ] }
+"keyword" = "Violet"
+"keyword.control" = { fg = 'Violet', modifiers = [ "bold" ] }
+"keyword.storage" = { fg = "SlateBlue1", modifiers = [ "bold" ] }
 
-"function" = "x223"
+"function" = "NavajoWhite1"
 
-"namespace" = "x177"
+"namespace" = "Violet"
 
-"diff.plus" = "x085"
-"diff.minus" = "x197"
-"diff.delta" = "x221"
+"diff.plus" = "SeaGreen1"
+"diff.minus" = "DeepPink1"
+"diff.delta" = "LightGoldenrod2"
 
-"ui.background" = { bg = "x233" }
-"ui.selection" = { bg = "x241" }
+"ui.background" = { bg = "Gray7" }
+"ui.selection" = { bg = "Grey39" }
 
-"ui.statusline" = { bg = "x233", fg = "x152" }
-"ui.statusline.inactive" = { bg = "x233", fg = "x152", modifiers = [ "dim" ] }
-"ui.statusline.normal" = { bg = "x152", fg = "x233", modifiers = [ "bold" ] }
-"ui.statusline.insert" = { bg = "x177", fg = "x233", modifiers = [ "bold" ] }
-"ui.statusline.select" = { bg = "x221", fg = "x233", modifiers = [ "bold" ] }
+"ui.statusline" = { bg = "Gray7", fg = "LightCyan3" }
+"ui.statusline.inactive" = { bg = "Gray7", fg = "LightCyan3", modifiers = [ "dim" ] }
+"ui.statusline.normal" = { bg = "LightCyan3", fg = "Gray7", modifiers = [ "bold" ] }
+"ui.statusline.insert" = { bg = "Violet", fg = "Gray7", modifiers = [ "bold" ] }
+"ui.statusline.select" = { bg = "LightGoldenrod2", fg = "Gray7", modifiers = [ "bold" ] }
 
-"ui.popup" = { bg = "x236" }
-"ui.menu" = { bg = "x236" }
-"ui.menu.selected" = { fg = "x152", modifiers = [ "bold" ], underline.style = "dotted" }
+"ui.popup" = { bg = "Grey19" }
+"ui.menu" = { bg = "Grey19" }
+"ui.menu.selected" = { fg = "LightCyan3", modifiers = [ "bold" ], underline.style = "dotted" }
 
-"ui.linenr" = { fg = "x241", modifiers = [ "italic" ] }
-"ui.linenr.selected" = { fg = "x241", modifiers = [ "bold" ] }
+"ui.linenr" = { fg = "Grey39", modifiers = [ "italic" ] }
+"ui.linenr.selected" = { fg = "Grey39", modifiers = [ "bold" ] }
 
-"ui.help" = { bg = "x233", fg = "x152" }
-"ui.virtual.ruler" = { bg = "x236" }
+"ui.help" = { bg = "Gray7", fg = "LightCyan3" }
+"ui.virtual.ruler" = { bg = "Grey19" }
 
-"hint" = "x241"
-"info" = "x152"
-"warning" = "x221"
-"error" = "x197"
+"hint" = "Grey39"
+"info" = "LightCyan3"
+"warning" = "LightGoldenrod2"
+"error" = "DeepPink1"
 
-"diagnostic.hint" = { underline = { color = "x241", style = "line" } }
-"diagnostic.info" = { underline = { color = "x152", style = "line" } }
-"diagnostic.warning" = { underline = { color = "x221", style = "line" } }
-"diagnostic.error" = { underline = { color = "x197", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "Grey39", style = "line" } }
+"diagnostic.info" = { underline = { color = "LightCyan3", style = "line" } }
+"diagnostic.warning" = { underline = { color = "LightGoldenrod2", style = "line" } }
+"diagnostic.error" = { underline = { color = "DeepPink1", style = "curl" } }
 
 [palette]
-x050 = "#00ffd7" # Cyan2
-x075 = "#5fafff" # SteelBlue1
-x080 = "#5fd7d7" # MediumTurquoise
-x085 = "#5fffaf" # SeaGreen1
-x099 = "#874fff" # SlateBlue1
-x152 = "#afd7d7" # LightCyan3
-x156 = "#afff87" # PaleGreen1
-x165 = "#d700ff" # Magenta2
-x177 = "#d787ff" # Violet
-x190 = "#d7ff00" # Yellow2
-x197 = "#ff005f" # DeepPink1
-x205 = "#ff5fd7" # HotPink
-x210 = "#ff8787" # LightCoral
-x212 = "#ff87d7" # Orchid2
-x221 = "#ffd75f" # LightGoldenrod2
-x223 = "#ffd7af" # NavajoWhite1
-x233 = "#121212" # Grey7
-x236 = "#303030" # Grey19
-x241 = "#626262" # Grey39
-x253 = "#dadada" # Grey93
+Cyan2 = "#00ffd7" # Cyan2
+SteelBlue1 = "#5fafff" # SteelBlue1
+MediumTurquoise = "#5fd7d7" # MediumTurquoise
+SeaGreen1 = "#5fffaf" # SeaGreen1
+SlateBlue1 = "#874fff" # SlateBlue1
+LightCyan3 = "#afd7d7" # LightCyan3
+Violet = "#d787ff" # Violet
+Yellow2 = "#d7ff00" # Yellow2
+DeepPink1 = "#ff005f" # DeepPink1
+LightCoral = "#ff8787" # LightCoral
+LightGoldenrod2 = "#ffd75f" # LightGoldenrod2
+NavajoWhite1 = "#ffd7af" # NavajoWhite1
+Gray7 = "#121212" # Grey7
+Grey19 = "#303030" # Grey19
+Grey39 = "#626262" # Grey39
+Grey93 = "#dadada" # Grey93
 
 darkest  = "#0c0d13"
 darker   = "#31323a"
