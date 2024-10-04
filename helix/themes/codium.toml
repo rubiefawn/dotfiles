@@ -1,0 +1,51 @@
+
+"ui.background" = { bg = "Black 0" }
+"ui.text" = "White 0"
+"ui.selection" = { bg = "Gray 1" }
+"ui.virtual" = { fg = "Gray 0", modifiers = [ "dimmed" ] }
+"ui.gutter" = { fg = "Gray 2", bg = "Black 0" }
+"ui.linenr" = { fg = "Gray 2", bg = "Black 0" }
+"ui.linenr.selected" = { fg = "Gray 3", bg = "Black 0" }
+"ui.bufferline.background" = { fg = "Gray 2", bg = "Black 1" }
+"ui.bufferline.active" = { fg = "White 0", bg = "Black 0" }
+
+"operator" = "White 0"
+"function" = "Yellow 1"
+"function.macro" = "Blue 0"
+"function.special" = "Blue 0"
+"attribute" = "Cyan 0"
+"type" = "Cyan 0"
+"namespace" = "Cyan 0"
+"keyword" = "Purple 0"
+"keyword.directive" = "Purple 0"
+"keyword.storage" = "Blue 0"
+"variable" = "Sky Blue 0"
+"constant" = "Sky Blue 1"
+"constant.builtin" = "Blue 0"
+"constant.numeric" = "Green 1"
+"constant.character" = "Salmon 1"
+"constant.character.escape" = "Yellow 0"
+"type.enum.variant" = "Sky Blue 1"
+"string" = "Salmon 1"
+"string.regexp" = "Salmon 0"
+"comment" = { fg = "Green 0", modifiers = [ "italic" ] }
+
+[palette]
+"Yellow 0"    = "#d7ba7d"
+"Yellow 1"    = "#dcdcaa"
+"Cyan 0"      = "#4ec9b0"
+"Purple 0"    = "#c586c0"
+"Sky Blue 0"  = "#9cdcfe"
+"Sky Blue 1"  = "#4fc1ff"
+"Salmon 0"    = "#d16969"
+"Salmon 1"    = "#ce9178"
+"Blue 0"      = "#569cd6"
+"Green 0"     = "#6a9955"
+"Green 1"     = "#b5cea8"
+"White 0"     = "#d4d4d4"
+"Gray 0"      = "#373736"
+"Gray 1"      = "#add6ff"
+"Gray 2"      = "#6e7681"
+"Gray 3"      = "#cccccc"
+"Black 0"     = "#1e1e1e"
+"Black 1"     = "#181818"

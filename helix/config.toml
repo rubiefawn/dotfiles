@@ -27,6 +27,12 @@ mode.insert = "insert"
 mode.select = "select"
 center      = [ "version-control" ]
 
+[editor.whitespace.render]
+space = "all"
+
+[editor.whitespace.characters]
+space = "·"
+
 [keys.normal]
 esc   = [ "collapse_selection", "keep_primary_selection" ]
 tab   = "goto_next_buffer"
