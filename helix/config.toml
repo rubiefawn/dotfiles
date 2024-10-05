@@ -9,7 +9,7 @@ shell       = [ "nu", "-c" ]
 bufferline  = "always"
 text-width  = 120
 mouse       = false
-rulers      = [ 72 ]
+rulers      = [ 72, 120 ]
 
 [editor.cursor-shape]
 insert = "bar"

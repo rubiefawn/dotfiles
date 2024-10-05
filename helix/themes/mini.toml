@@ -1,12 +1,10 @@
-# "ui.text" = { fg = "light-yellow" }
 "ui.menu" = { fg = "light-gray", bg = "black" }
 "ui.menu.selected" = { fg = "green" }
-"ui.linenr" = { fg = "light-gray", bg = "black" }
+"ui.linenr" = { fg = "light-gray", bg = "black", modifiers = [ "dim" ] }
+"ui.linenr.selected" = { fg = "light-gray", bg = "black" }
 "ui.popup" = { bg = "black" }
 "ui.window" = { bg = "black" }
-"ui.linenr.selected" = { fg = "white", bg = "black", modifiers = [ "bold" ] }
 "ui.selection" = { modifiers = [ "reversed" ] }
-"comment" = { fg = "gray", modifiers = [ "italic" ] }
 "ui.statusline" = { fg = "white", bg = "black" }
 "ui.statusline.inactive" = { fg = "gray", bg = "black" }
 "ui.help" = { fg = "white", bg = "black" }
@@ -17,17 +15,19 @@
 "ui.virtual.ruler" = { bg = "gray", fg = "black" }
 "ui.virtual.indent-guide" = { fg = "gray", modifiers = [ "bold" ] }
 
-"diff.plus" = "green"
-"diff.delta" = "yellow"
+"comment" = { fg = "gray", modifiers = [ "italic" ] }
+
+"diff.plus" = "light-green"
+"diff.delta" = "light-yellow"
 "diff.minus" = "light-red"
 
-"diagnostic.hint" = { fg = "light-gray" }
-"diagnostic.info" = { fg = "cyan" }
-"diagnostic.warning" = { fg = "yellow" }
-"diagnostic.error" = { fg = "light-red" }
+"diagnostic.hint" = { underline.style = "line" }
+"diagnostic.info" = { fg = "cyan", underline.style = "line" }
+"diagnostic.warning" = { fg = "yellow", underline.style = "curl" }
+"diagnostic.error" = { fg = "red", underline.style = "curl" }
 "ui.gutter" = { bg = "black" }
 "info" = "cyan"
 "hint" = "gray"
 "debug" = "gray"
 "warning" = "yellow"
-"error" = "light-red"
+"error" = "red"
