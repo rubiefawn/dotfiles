@@ -1,5 +1,7 @@
 # Derived from base16_theme (NNB <nnbnh@protonmail.com>)
 
+"ui.text" = "white"
+"ui.background" = { bg = "black" }
 "ui.menu" = { fg = "black", bg = "white" }
 "ui.menu.selected" = { modifiers = ["reversed"] }
 "ui.linenr" = { fg = "gray", bg = "black" }

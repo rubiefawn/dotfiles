@@ -1,3 +1,5 @@
+"ui.text" = "white"
+"ui.background" = { bg = "black" }
 "ui.menu" = { fg = "light-gray", bg = "black" }
 "ui.menu.selected" = { fg = "green" }
 "ui.linenr" = { fg = "light-gray", bg = "black", modifiers = [ "dim" ] }
