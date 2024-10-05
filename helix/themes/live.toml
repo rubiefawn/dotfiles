@@ -2,11 +2,11 @@ inherits = "mini"
 
 "attribute" = "light-blue"
 "keyword"   = "light-blue"
+"keyword.directive" = "light-magenta"
 "type"      = "light-cyan"
 "string"    = "light-red"
 "constant"  = "light-violet"
 "constant.character.escape" = "light-yellow"
-"comment" = { fg = "gray", modifiers = [ "bold" ] }
 
 [palette]
 "red"           = "#f65b74" # oklch(68% 0.20 015)
