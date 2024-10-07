@@ -1,7 +1,6 @@
-
 "ui.background" = { bg = "Black 0" }
 "ui.text" = "White 0"
-"ui.selection" = { bg = "Gray 1" }
+"ui.selection" = { bg = "Gray 2" }
 "ui.virtual" = { fg = "Gray 0", modifiers = [ "dimmed" ] }
 "ui.gutter" = { fg = "Gray 2", bg = "Black 0" }
 "ui.linenr" = { fg = "Gray 2", bg = "Black 0" }
@@ -29,6 +28,10 @@
 "string" = "Salmon 1"
 "string.regexp" = "Salmon 0"
 "comment" = { fg = "Green 0", modifiers = [ "italic" ] }
+
+"diff.plus" = "Green 0"
+"diff.minus" = "Salmon 0"
+"diff.delta" = "Yellow 1"
 
 [palette]
 "Yellow 0"    = "#d7ba7d"

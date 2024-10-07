@@ -7,6 +7,7 @@ inherits = "mini"
 "string"    = "light-red"
 "constant"  = "light-violet"
 "constant.character.escape" = "light-yellow"
+"comment"   = "gray"
 
 [palette]
 "red"           = "#f65b74" # oklch(68% 0.20 015)
