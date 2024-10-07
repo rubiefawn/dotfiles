@@ -1,0 +1,16 @@
+[language-server.emmet-ls]
+args = ["--stdio"]
+command = "emmet-ls"
+
+[[language]]
+name = "c"
+indent = { unit = "\t", tab-width = 4 }
+
+[[language]]
+name = "rust"
+indent = { unit = "\t", tab-width = 4 }
+
+[[language]]
+name = "html"
+indent = { unit = "\t", tab-width = 2 }
+language-servers = [ "superhtml-lsp", "emmet-ls" ]
