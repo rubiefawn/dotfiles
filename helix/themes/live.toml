@@ -23,7 +23,7 @@ inherits = "mini"
 "light-blue"    = "#6cc4ff" # oklch(79% 0.12 240)
 "light-magenta" = "#ff9fe1" # oklch(82% 0.14 340)
 
-"black"         = "#0b0c16" # oklch(16% 0.02 277)
+"black"         = "#04050d" # oklch(16% 0.02 277)
 "gray"          = "#5a5d69" # oklch(48% 0.02 277)
 "light-gray"    = "#d5d7de" # oklch(88% 0.01 277)
 "white"         = "#fafbff" # oklch(99% 0.01 277)
