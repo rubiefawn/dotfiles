@@ -1,0 +1,10 @@
+[core]
+	editor = hx
+[diff]
+	colorMoved = default
+[merge]
+	conflictstyle = diff3
+[alias]
+	main_branch = "!git_find_main_branch() { git rev-parse -q --symbolic --verify origin/main || git rev-parse -q --symbolic --verify origin/master || git rev-parse -q --symbolic --verify main || git rev-parse -q --symbolic --verify master; }; git_find_main_branch"
+	l = "!git_log_branch() { git log $(git main_branch)^..HEAD --no-merges; }; git_log_branch"
+	d = "!git_diff_branch() { git log $(git main_branch)^..HEAD --no-merges -p; }; git_diff_branch"
