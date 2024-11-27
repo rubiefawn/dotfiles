@@ -1,6 +1,10 @@
-[language-server.emmet-ls]
-args = ["--stdio"]
+[language-server.superhtml] # This can be removed
+command = "superhtml"
+args = ["lsp"]
+
+[language-server.emmet]
 command = "emmet-ls"
+args = ["--stdio"]
 
 [[language]]
 name = "c"
@@ -13,4 +17,8 @@ indent = { unit = "\t", tab-width = 4 }
 [[language]]
 name = "html"
 indent = { unit = "\t", tab-width = 2 }
-language-servers = [ "superhtml-lsp", "emmet-ls" ]
+language-servers = [ "superhtml", "emmet" ]
+
+[[language]]
+name = "javascript"
+indent = { unit = "\t", tab-width = 4 }
