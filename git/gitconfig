@@ -1,3 +1,5 @@
+[advice]
+	pushNonFastForward = false
 [core]
 	editor = hx
 [pretty]

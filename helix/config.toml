@@ -5,7 +5,6 @@ default-line-ending = "lf"
 line-number = "relative"
 cursorline  = true
 color-modes = true
-shell       = [ "nu", "-c" ]
 bufferline  = "always"
 text-width  = 120
 mouse       = false
