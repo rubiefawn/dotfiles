@@ -1,0 +1,15 @@
+[core]
+	editor = hx
+[pretty]
+	nice = %C(yellow bold)%h %C(cyan)%ar %C(reset)%C(dim bold)%an%n%C(reset)%w(76,2,2)%s
+	smol = %C(yellow bold)%h %C(cyan)%ar %C(reset)%C(dim bold)%an %C(reset)%<|(-1,trunc)%s
+[commit]
+	template = ~/.gitmessage
+[diff]
+	external = difft
+[alias]
+	c = commit -a
+	l = log --pretty=nice --ext-diff --find-renames 
+	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol
+	prev = l -p @~
+	this = d @
