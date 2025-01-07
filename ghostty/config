@@ -1,0 +1,7 @@
+font-family=Iosevka Custom
+font-size=16
+command=nu
+theme=live2
+window-theme=ghostty
+gtk-titlebar=false
+gtk-wide-tabs = false
