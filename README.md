@@ -1,9 +1,8 @@
 # dotfiles
 
-## [Git](https://git-scm.com/)
+## Packages
 
-## [Helix](https://helix-editor.com/)
-
-[Config location:](https://docs.helix-editor.com/configuration.html) `~/.config/helix/config.toml` or `%AppData%\helix\config.toml`
-
-[Themes location:](https://docs.helix-editor.com/themes.html) `~/.config/helix/themes` or `%AppData%\helix\themes`
+- wayland compositor: [niri](https://github.com/YaLTeR/niri), [hyprland](https://github.com/hyprwm/Hyprland)
+- text editor: [helix](https://github.com/helix-editor/helix)
+- terminal emulator: [ghostty](https://github.com/ghostty-org/ghostty), [foot](https://codeberg.org/dnkl/foot)
+- tui file manager: [yazi](https://github.com/sxyazi/yazi)
