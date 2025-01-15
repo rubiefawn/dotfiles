@@ -13,6 +13,7 @@
 "ui.cursor" = { modifiers = [ "reversed" ] }
 "ui.cursor.primary" = { modifiers = [ "reversed" ] }
 "ui.virtual.whitespace" = { fg = "gray", modifiers = [ "dim" ] }
+"ui.virtual.wrap" = { fg = "gray", modifiers = [ "dim" ] }
 "ui.virtual.jump-label" = { fg = "green", underline.style = "line" }
 "ui.virtual.ruler" = { bg = "gray", fg = "black" }
 "ui.virtual.indent-guide" = { fg = "gray", modifiers = [ "bold" ] }

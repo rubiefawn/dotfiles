@@ -1,0 +1,15 @@
+inherits = "mini"
+
+"attribute" = "light-blue"
+"keyword"   = "light-blue"
+"keyword.directive" = "light-magenta"
+"type"      = "light-cyan"
+"string"    = "light-red"
+"constant"  = "light-violet"
+"constant.character.escape" = "light-yellow"
+"comment"   = "gray"
+
+"ui.statusline.normal" = { fg = "light-gray", modifiers = [ "reversed" ] }
+"ui.statusline.insert" = { fg = "light-yellow", modifiers = [ "reversed" ] }
+"ui.statusline.select" = { fg = "light-blue", modifiers = [ "reversed" ] }
+

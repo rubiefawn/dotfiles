@@ -1,7 +1,7 @@
-font-family=Iosevka Custom
+font-family=Maple Mono NF
 font-size=16
 command=nu
-theme=live2
+theme=nice
 window-theme=ghostty
 gtk-titlebar=false
 gtk-wide-tabs = false
