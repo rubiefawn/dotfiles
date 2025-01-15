@@ -7,7 +7,7 @@ selection-background=#292b30
 
 # black
 palette = 0=#0d0f14
-palette = 8=#404248
+palette = 8=#5a5d69
 
 # red
 palette = 1=#fa5570
@@ -22,8 +22,8 @@ palette = 3=#fab700
 palette = 11=#ffd077
 
 # blue
-palette = 4=#809eff
-palette = 12=#9db6ff
+palette = 4=#67a3ff
+palette = 12=#8dbbff
 
 # magenta
 palette = 5=#d28fff
@@ -34,5 +34,5 @@ palette = 6=#20d3db
 palette = 14=#2eebfb
 
 # white
-palette = 7=#c1c4cb
+palette = 7=#a2a5ab
 palette = 15=#f5f8ff

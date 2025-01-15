@@ -1,7 +1,7 @@
 font-family=Maple Mono NF
 font-size=16
 command=nu
-theme=nice
+theme=charm
 window-theme=ghostty
 gtk-titlebar=false
 gtk-wide-tabs = false

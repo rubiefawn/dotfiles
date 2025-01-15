@@ -1,0 +1,12 @@
+inherits = "base16_charm"
+
+"constant"  = "violet"
+
+[palette]
+"blue"          = "#67a3ff" # oklch(72% 0.16 260)
+"violet"        = "#d28fff" # oklch(76% 0.17 310)
+"magenta"       = "#fe7ccb" # oklch(76% 0.18 345)
+
+"light-blue"    = "#8dbbff" # oklch(79% 0.12 260)
+"light-violet"  = "#d3a1ff" # oklch(82% 0.12 310)
+"light-magenta" = "#ff9ed9" # oklch(82% 0.14 345)

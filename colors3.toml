@@ -1,0 +1,22 @@
+# phantom colors that appeared in my windows terminal themes, despite
+# literally not being present in my config.json ???
+red           = "#f65b74"
+orange        = "#fd923e"
+yellow        = "#ffb900"
+green         = "#16d584"
+cyan          = "#20d3db"
+blue          = "#43b2f6"
+violet        = "#be84ff"
+
+light-red     = "#fc9099"
+light-orange  = "#ffaf76"
+light-yellow  = "#ffd077"
+light-green   = "#45fca4"
+light-cyan    = "#2eebfb"
+light-blue    = "#6cc4ff"
+light-violet  = "#d0a8ff"
+
+black         = "#0d0f14"
+gray          = "#5a5d69"
+light-gray    = "#a2a5ab"
+white         = "#fafbff"
