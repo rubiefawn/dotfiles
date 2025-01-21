@@ -7,9 +7,11 @@
 	template = ~/.gitmessage
 [diff]
 	external = difft
+[show]
+	external = difft
 [alias]
 	c = commit
 	l = log --pretty=nice --ext-diff --find-renames 
 	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol
-	prev = l -p @~
+	s = show --pretty=nice --ext-diff
 	this = d --staged @
