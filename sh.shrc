@@ -1,0 +1,26 @@
+#!/bin/sh
+# ~/.shrc: common POSIX shell configuration, intended to be sourced at
+# the top of all other POSIX-compliant shell's .*rc configuration files
+
+case $- in *i*) ;; *) return;; esac
+
+set -o vi
+
+export EDITOR=command -v hx || command -v helix || command -v vim || command -v vi || $EDITOR
+export VISUAL=$EDITOR
+
+alias ls='ls --color=auto --time-style=long-iso -Fh'
+alias la='ls --color=auto --time-style=long-iso -AFh'
+alias ll='ls --color=auto --time-style=long-iso -AFhl'
+alias rm='rm --dir'
+alias rmr='rm --recursive --one-file-system'
+alias grep='grep --color=auto'
+alias egrep='grep --color=auto --extended-regexp'
+alias fgrep='grep --color=auto --fixed-strings'
+
+[ "$(command -v bat)" ] && alias cat='bat -pp'
+
+if [ "$(command -v hx || command -v helix)" ]; then
+	alias hx='$VISUAL'
+	alias helix='$VISUAL'
+fi
