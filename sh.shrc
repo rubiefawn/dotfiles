@@ -19,6 +19,7 @@ alias egrep='grep --color=auto --extended-regexp'
 alias fgrep='grep --color=auto --fixed-strings'
 
 [ "$(command -v bat)" ] && alias cat='bat -pp'
+[ "$(command -v yazi)" ] && alias y='yazi'
 
 if [ "$(command -v hx || command -v helix)" ]; then
 	alias hx='$VISUAL'
