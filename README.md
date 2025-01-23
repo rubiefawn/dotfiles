@@ -6,8 +6,8 @@
 |----------|------------|
 | Wayland compositor | [niri](https://github.com/YaLTeR/niri), [hyprland](https://github.com/hyprwm/Hyprland) |
 | Text editor | [helix](https://github.com/helix-editor/helix) |
-| Terminal emulator | [ghostty](https://github.com/ghostty-org/ghostty), [foot](https://codeberg.org/dnkl/foot) |
-| Shell | [nushell](https://github.com/nushell/nushell), [ksh](https://github.com/ibara/oksh) |
+| Terminal emulator | [foot](https://codeberg.org/dnkl/foot), [ghostty](https://github.com/ghostty-org/ghostty) |
+| Shell | [ksh](https://github.com/ibara/oksh), [nushell](https://github.com/nushell/nushell) |
 | Application launcher | [fuzzel](https://codeberg.org/dnkl/fuzzel) |
 | Display manager | [ly](https://github.com/fairyglade/ly) |
 | Wallpaper manager | [swww](https://github.com/LGFae/swww) |

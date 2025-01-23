@@ -1,3 +1,5 @@
+# Initial color scheme
+[[palette]]
 red           = "#f65b74" # oklch(68% 0.20 015)
 orange        = "#ff8a35" # oklch(74% 0.17 055)
 yellow        = "#ffb900" # oklch(83% 0.18 082)
@@ -6,6 +8,7 @@ cyan          = "#0dccda" # oklch(77% 0.13 204)
 blue          = "#43b2f6" # oklch(75% 0.14 240)
 violet        = "#be84ff" # oklch(72% 0.18 304)
 magenta       = "#f674d0" # oklch(74% 0.20 340)
+
 light-red     = "#fc9099" # oklch(77% 0.13 015)
 light-orange  = "#ffaf76" # oklch(82% 0.12 055)
 light-yellow  = "#ffd077" # oklch(88% 0.12 082)
@@ -19,3 +22,61 @@ black         = "#04050d" # oklch(12% 0.02 277)
 gray          = "#5a5d69" # oklch(48% 0.02 277)
 light-gray    = "#d5d7de" # oklch(88% 0.01 277)
 white         = "#fafbff" # oklch(99% 0.01 277)
+
+# Second attempt to make the colors more consistent by using a formula
+# to determine luminance stops
+# (85 / 2) * ln(x + 1)
+# 17, 29, 38, 46, 53, 58, 63, 68, 72, 76, 79, 82, 85, 88, 90, 93, 95
+[[palette]]
+red           = "#fa5570" # oklch(68% 0.20 015)
+orange        = "#fd923e" # oklch(76% 0.16 055)
+yellow        = "#fab700" # oklch(82% 0.17 080)
+green         = "#2fdc88" # oklch(79% 0.18 156)
+cyan          = "#20d3db" # oklch(79% 0.13 200)
+blue          = "#809eff" # oklch(72% 0.15 270)
+violet        = "#d28fff" # oklch(76% 0.17 310)
+magenta       = "#fe7ccb" # oklch(76% 0.18 345)
+
+light-red     = "#fd8994" # oklch(76% 0.14 015)
+light-orange  = "#ffaf76" # oklch(82% 0.12 055)
+light-yellow  = "#ffd077" # oklch(88% 0.12 082)
+light-green   = "#70f6aa" # oklch(88% 0.16 156)
+light-cyan    = "#2eebfb" # oklch(88% 0.14 200)
+light-blue    = "#9db6ff" # oklch(79% 0.12 270)
+light-violet  = "#d3a1ff" # oklch(82% 0.12 310)
+light-magenta = "#ff9ed9" # oklch(82% 0.14 345)
+
+black         = "#0d0f14" # oklch(17% 0.01 266)
+black01       = "#292b30" # oklch(29% 0.01 266)
+gray          = "#404248" # oklch(38% 0.01 266)
+gray01        = "#606369" # oklch(50% 0.01 266)
+gray02        = "#808389" # oklch(61% 0.01 266)
+light-gray    = "#a2a5ab" # oklch(72% 0.01 266)
+light-gray01  = "#c1c4cb" # oklch(82% 0.01 266)
+white         = "#f5f8ff" # oklch(98% 0.01 266)
+
+# Phantom colors that appeared in my Windows Terminal themes, despite
+# literally not being present in my config.json ???
+# These don't appear to be as consistent, but they are pleasing. Saving
+# them just in case they are useful later
+[[palette]]
+red          = "#f65b74"
+orange       = "#fd923e"
+yellow       = "#ffb900"
+green        = "#16d584"
+cyan         = "#20d3db"
+blue         = "#43b2f6"
+violet       = "#be84ff"
+
+light-red    = "#fc9099"
+light-orange = "#ffaf76"
+light-yellow = "#ffd077"
+light-green  = "#45fca4"
+light-cyan   = "#2eebfb"
+light-blue   = "#6cc4ff"
+light-violet = "#d0a8ff"
+
+black        = "#0d0f14"
+gray         = "#5a5d69"
+light-gray   = "#a2a5ab"
+white        = "#fafbff"
