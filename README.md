@@ -1,6 +1,6 @@
-# dotfiles
+# 🐚 dotfiles
 
-## Packages
+## 📦 Packages
 
 | Function | Package(s) |
 |----------|------------|
