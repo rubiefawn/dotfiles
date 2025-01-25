@@ -45,6 +45,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; } // Mod+?
     Mod+Return { spawn "foot"; }
+    Mod+Ctrl+Return { spawn "ghostty"; }
     Mod+Space { spawn "fuzzel"; }
     Mod+Period { spawn "bemoji" "--type" "--noline"; }
     //TODO: Mod+Shift+L to lock screen
