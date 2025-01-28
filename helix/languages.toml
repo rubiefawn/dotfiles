@@ -3,7 +3,7 @@ command = "emmet-ls"
 args = ["--stdio"]
 
 [language-server.clangd]
-config = { "fallbackFlags" = [ "-std=c23", "-Wall" "-pedantic" ] }
+config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
 
 [[language]]
 name = "c"

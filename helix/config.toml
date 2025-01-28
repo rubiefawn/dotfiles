@@ -48,13 +48,3 @@ A-c   = "change_selection"
 c     = "change_selection_noyank"
 A-j   = [ "extend_to_line_bounds",  "delete_selection", "paste_after" ]
 A-k   = [ "extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before" ]
-
-[keys.insert]
-up       = "no_op"
-down     = "no_op"
-left     = "no_op"
-right    = "no_op"
-pageup   = "no_op"
-pagedown = "no_op"
-home     = "no_op"
-end      = "no_op"

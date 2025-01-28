@@ -5,3 +5,4 @@ theme=charm
 window-theme=ghostty
 gtk-titlebar=false
 gtk-wide-tabs = false
+gtk-single-instance = true
