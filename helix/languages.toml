@@ -1,9 +1,13 @@
+[language-server.clangd]
+config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
+
 [language-server.emmet]
 command = "emmet-ls"
 args = ["--stdio"]
 
-[language-server.clangd]
-config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
+[language-server.phpactor]
+command = "phpactor"
+args = [ "language-server" ]
 
 [[language]]
 name = "c"
@@ -16,18 +20,23 @@ indent = { unit = "\t", tab-width = 4 }
 roots = [ ".git" ]
 
 [[language]]
-name = "nasm"
-indent = { unit = "\t", tab-width = 2 }
-
-[[language]]
-name = "rust"
-indent = { unit = "\t", tab-width = 4 }
-
-[[language]]
 name = "html"
 # indent = { unit = "\t", tab-width = 2 } # https://github.com/kristoff-it/superhtml/issues/46
 language-servers = [ "superhtml", "emmet" ]
 
 [[language]]
 name = "javascript"
+indent = { unit = "\t", tab-width = 4 }
+
+[[language]]
+name = "nasm"
+indent = { unit = "\t", tab-width = 2 }
+
+[[language]]
+name = "php"
+language-servers = [ "phpactor" ]
+indent = { unit = "\t", tab-width = 4 }
+
+[[language]]
+name = "rust"
 indent = { unit = "\t", tab-width = 4 }
