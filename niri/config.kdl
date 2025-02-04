@@ -5,7 +5,7 @@ input {
 }
 
 layout {
-    gaps 16
+    gaps 12
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
@@ -20,7 +20,7 @@ layout {
     }
 
     // TODO: Adjust this for top bar
-    struts { left 0; right 0; top 0; bottom 0; }
+    struts { left 0; right 0; top -12; bottom 0; }
 }
 
 spawn-at-startup "swww-daemon"

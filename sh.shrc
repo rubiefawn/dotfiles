@@ -8,6 +8,7 @@ set -o vi
 
 export EDITOR=$(command -v hx || command -v helix || command -v vim || command -v vi || $EDITOR)
 export VISUAL=$EDITOR
+export FCEDIT=$EDITOR
 
 alias ls='ls --color=auto --time-style=long-iso -Fh'
 alias la='ls --color=auto --time-style=long-iso -AFh'

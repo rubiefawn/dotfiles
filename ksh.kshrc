@@ -16,7 +16,7 @@ function exit-status-color { [ $? -ne 0 ] && printf " \e[91m${1}\e[0m"; }
 function exit-status { [ $? -ne 0 ] && printf "!${1}"; }
 
 if [ $(tput colors) -ge 16 ]; then
-	PS1='\e[93m\u\e[0m@\e[93m\H \e[96m\w$(git-info-color)$(exit-status-color $?)\e[0m\n🐚 '
+	PS1='\e[1;93m\u\e[0m@\e[1;93m\H \e[1;96m\w\e[0m$(git-info-color)$(exit-status-color $?)\e[0m\n🐚 '
 else
 	PS1='\u@\H \w$(git-info)$(exit-status $?)\n$ '
 fi
