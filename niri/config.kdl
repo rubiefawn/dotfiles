@@ -12,17 +12,19 @@ layout {
         proportion 0.66667
     }
     default-column-width { proportion 0.5; }
-    focus-ring { off; }
-    border {
+    focus-ring {
         width 3
         active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
-        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        inactive-color "#0d0f14"
+
     }
 
     // TODO: Adjust this for top bar
-    struts { left 0; right 0; top -12; bottom 0; }
+    struts { left 0; right 0; top 0; bottom 0; }
 }
 
+spawn-at-startup "yambar"
+spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "foot"
 prefer-no-csd
