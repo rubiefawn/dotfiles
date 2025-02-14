@@ -12,6 +12,10 @@
 [alias]
 	c = commit
 	l = log --pretty=nice --ext-diff --find-renames 
+	lb = l upstream..
 	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol
+	db = d upstream...
 	s = show --pretty=nice --ext-diff
-	this = d --staged @
+	f = fetch --all --prune
+	pf = push --force-with-lease
+	this = d --cached @
