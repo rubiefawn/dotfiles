@@ -11,10 +11,11 @@
 	external = difft
 [alias]
 	c = commit
-	l = log --pretty=nice --ext-diff --find-renames 
+	l = log --pretty=nice --ext-diff --find-copies
 	lb = l upstream..
-	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol
+	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol --find-copies
 	db = d upstream...
+	b = blame -C --color-by-age
 	s = show --pretty=nice --ext-diff
 	f = fetch --all --prune
 	pf = push --force-with-lease
