@@ -6,7 +6,7 @@ case $- in *i*) ;; *) return;; esac
 
 set -o vi
 
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=$(command -v hx || command -v helix || command -v vim || command -v vi || $EDITOR)
 export VISUAL=$EDITOR
 export FCEDIT=$EDITOR
