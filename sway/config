@@ -1,0 +1,96 @@
+font pango:Virtue 10
+gaps inner 10
+corner_radius 10
+smart_corner_radius enable
+focus_wrapping no
+
+client.focused #67a3ff #67a3ff #0d0f14
+client.urgent #fa5570 #fa5570 #0d0f14
+client.unfocused #0d0f14 #0d0f14 #a2a5ab
+
+set $mod Mod4
+set $term foot
+set $termAlt ghostty
+set $menu fuzzel
+set $emoji bemoji --type --noline
+
+input "type:keyboard" {
+	xkb_options caps:escape
+}
+
+bindgesture swipe:up workspace prev
+bindgesture swipe:down workspace next
+
+floating_modifier $mod normal
+bindsym $mod+Grave exec $term
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $termAlt
+bindsym $mod+Space exec $menu
+bindsym $mod+Period exec $emoji
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym Ctrl+Alt+Delete exit
+
+bindsym $mod+Shift+q kill
+
+bindsym $mod+f fullscreen
+bindsym $mod+t layout toggle tabbed split
+bindsym $mod+b splith
+bindsym $mod+v splitv
+bindsym $mod+x focus mode_toggle
+bindsym $mod+Shift+x floating toggle
+
+bindsym $mod+a focus parent
+bindsym $mod+z focus child
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+bindsym $mod+Ctrl+h resize shrink width
+bindsym $mod+Ctrl+j resize grow height
+bindsym $mod+Ctrl+k resize shrink height
+bindsym $mod+Ctrl+l resize grow width
+
+bindsym $mod+w exec 
+bindsym $mod+1 workspace 🐸
+bindsym $mod+2 workspace 🐈
+bindsym $mod+3 workspace 💜
+bindsym $mod+4 workspace 🌻
+bindsym $mod+5 workspace ☠️
+bindsym $mod+6 workspace 🤠
+bindsym $mod+7 workspace 👻
+bindsym $mod+8 workspace 🦴
+bindsym $mod+9 workspace 🐢
+# bindsym $mod+0 scratchpad show
+
+bindsym $mod+Shift+1 move container to workspace 🐸
+bindsym $mod+Shift+2 move container to workspace 🐈
+bindsym $mod+Shift+3 move container to workspace 💜
+bindsym $mod+Shift+4 move container to workspace 🌻
+bindsym $mod+Shift+5 move container to workspace ☠️
+bindsym $mod+Shift+6 move container to workspace 🤠
+bindsym $mod+Shift+7 move container to workspace 👻
+bindsym $mod+Shift+8 move container to workspace 🦴
+bindsym $mod+Shift+9 move container to workspace 🐢
+bindsym $mod+Shift+0 move container to scratchpad
+
+bindsym Print exec grim
+
+bar {
+	position top
+}
+
+# exec yambar
+exec swww-daemon
+exec swww-randomize ~/Pictures/Wallpapers
+exec foot
+
+include /etc/sway/config.d/*
+include ~/.config/sway/local
