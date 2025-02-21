@@ -12,9 +12,9 @@
 [alias]
 	c = commit
 	l = log --pretty=nice --ext-diff --find-copies
-	lb = l upstream..
+	lb = l origin..
 	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol --find-copies
-	db = d upstream...
+	db = d origin...
 	b = blame -C --color-by-age
 	s = show --pretty=nice --ext-diff
 	f = fetch --all --prune
