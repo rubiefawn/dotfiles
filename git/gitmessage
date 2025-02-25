@@ -3,3 +3,7 @@
 
 # Body, max 72 characters ─────────────────────────────────────────────┐
 
+
+
+# Co-authors, preceded by two newlines
+# Co-authored-by: name <user@domain>
