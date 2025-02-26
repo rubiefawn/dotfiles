@@ -7,3 +7,19 @@
 
 # Co-authors, preceded by two newlines
 # Co-authored-by: name <user@domain>
+
+# Github emoji codes (see https://gitmoji.dev)
+# :bug: fix a bug
+# :sparkles: add feature
+# :truck: move/rename stuff
+# :coffin: delete unused stuff
+# :art: code formatting
+# :zap: performance
+# :ambulance: hotfix
+# :memo: documentation
+# :lipstick: user interface
+# :rotating_light: fix compiler warnings
+# :construction: work-in-progress
+# :wrench: edit config
+# :pencil2: fix typos
+# :bento: add/edit assets
