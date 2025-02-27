@@ -5,10 +5,14 @@
 	smol = %C(yellow bold)%h %C(cyan)%ar %C(reset)%C(dim bold)%an %C(reset)%<|(-1,trunc)%s
 [commit]
 	template = ~/.gitmessage
+[core]
+	eol = lf
 [diff]
 	external = difft
 [push]
 	autoSetupRemote = true
+[init]
+	defaultBranch = main
 [show]
 	external = difft
 [alias]
