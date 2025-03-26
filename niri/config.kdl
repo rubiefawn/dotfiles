@@ -1,3 +1,15 @@
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/screenshot-%Y-%m-%d %H-%M-%S.png"
+spawn-at-startup "yambar"
+spawn-at-startup "xwayland-satellite"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "swww-randomize ~/Pictures/Wallpapers"
+spawn-at-startup "foot"
+
+environment {
+    DISPLAY ":0"
+}
+
 input {
     keyboard { xkb { options "caps:escape"; }; }
     touchpad { tap; natural-scroll; }
@@ -22,14 +34,6 @@ layout {
     // TODO: Adjust this for top bar
     struts { left 0; right 0; top 0; bottom 0; }
 }
-
-spawn-at-startup "yambar"
-spawn-at-startup "xwayland-satellite"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swww-randomize ~/Pictures/Wallpapers"
-spawn-at-startup "foot"
-prefer-no-csd
-screenshot-path "~/Pictures/Screenshots/screenshot-%Y-%m-%d %H-%M-%S.png"
 
 window-rule {
     geometry-corner-radius 12
