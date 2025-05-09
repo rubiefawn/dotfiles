@@ -11,10 +11,13 @@
 	external = difft
 [push]
 	autoSetupRemote = true
+	recurseSubmodules = on-demand
 [init]
 	defaultBranch = main
 [show]
 	external = difft
+[submodule]
+	recurse = true
 [alias]
 	c = commit
 	l = log --pretty=nice --ext-diff --find-copies
