@@ -1,62 +1,72 @@
-prefer-no-csd
-screenshot-path "~/Pictures/Screenshots/screenshot-%Y-%m-%d %H-%M-%S.png"
-spawn-at-startup "yambar"
-spawn-at-startup "xwayland-satellite"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swww-randomize ~/Pictures/Wallpapers"
-spawn-at-startup "foot"
-
-environment {
-    DISPLAY ":0"
-}
+// https://github.com/YaLTeR/niri/wiki/Configuration
 
 input {
-    keyboard { xkb { options "caps:escape"; }; }
+    keyboard { numlock; xkb { options "caps:escape"; }; }
     touchpad { tap; natural-scroll; }
+    warp-mouse-to-focus
     focus-follows-mouse max-scroll-amount="0%"
 }
 
 layout {
-    gaps 12
+    background-color "transparent"
+    gaps 24
+    default-column-display "tabbed"
+    center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
     default-column-width { proportion 0.5; }
-    focus-ring {
+    focus-ring { off; }
+    border {
         width 3
-        active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
+        active-color "#ffd077"
         inactive-color "#0d0f14"
-
+        urgent-color "#fa5570"
     }
-
-    // TODO: Adjust this for top bar
-    struts { left 0; right 0; top 0; bottom 0; }
+    shadow {
+        on
+        softness 12
+        spread 3
+        offset x=0 y=1.5
+        color "#0004"
+        inactive-color "#0002"
+    }
+    tab-indicator {
+        place-within-column
+        hide-when-single-tab
+        width 6
+        gap 8
+        corner-radius 3
+        gaps-between-tabs 8
+        length total-proportion=0.618
+        inactive-color "#0d0f14"
+    }
+    insert-hint { color "#809eff"; }
 }
 
+spawn-at-startup "foot"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "swww-randomize ~/Pictures/Wallpapers 120"
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/screenshot %Y-%m-%d %H-%M-%S.png"
+
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 8
     clip-to-geometry true
 }
 
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
 binds {
-    Mod+Shift+Slash { show-hotkey-overlay; } // Mod+?
+    Mod+Shift+Slash { show-hotkey-overlay; }
+
     Mod+Return { spawn "foot"; }
     Mod+Ctrl+Return { spawn "ghostty"; }
     Mod+Space { spawn "fuzzel"; }
     Mod+Period { spawn "bemoji" "--type" "--noline"; }
     //TODO: Mod+Shift+L to lock screen
-    Mod+Q { close-window; }
+    Mod+Escape repeat=false { toggle-overview; }
+    Mod+Q repeat=false { close-window; }
     Mod+H { focus-column-left; }
     Mod+J { focus-window-or-workspace-down; }
     Mod+K { focus-window-or-workspace-up; }
@@ -65,11 +75,18 @@ binds {
     Mod+Shift+J { move-window-down-or-to-workspace-down; }
     Mod+Shift+K { move-window-up-or-to-workspace-up; }
     Mod+Shift+L { move-column-right; }
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
-    Mod+Shift+Home { move-column-to-first; }
-    Mod+Shift+End  { move-column-to-last; }
-    //TODO: Keybinds for moving between monitors
+    Mod+Ctrl+H { focus-monitor-left; }
+    Mod+Ctrl+J { focus-monitor-down; }
+    Mod+Ctrl+K { focus-monitor-up; }
+    Mod+Ctrl+L { focus-monitor-right; }
+    Mod+Ctrl+Shift+H { move-column-to-monitor-left; }
+    Mod+Ctrl+Shift+J { move-column-to-monitor-down; }
+    Mod+Ctrl+Shift+K { move-column-to-monitor-up; }
+    Mod+Ctrl+Shift+L { move-column-to-monitor-right; }
+    Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+    Mod+Shift+WheelScrollDown cooldown-ms=150 { focus-column-right; }
+    Mod+Shift+WheelScrollUp cooldown-ms=150 { focus-column-left; }
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
     Mod+3 { focus-workspace 3; }
@@ -79,15 +96,16 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
-    Mod+Shift+1 { move-column-to-workspace 1; }
-    Mod+Shift+2 { move-column-to-workspace 2; }
-    Mod+Shift+3 { move-column-to-workspace 3; }
-    Mod+Shift+4 { move-column-to-workspace 4; }
-    Mod+Shift+5 { move-column-to-workspace 5; }
-    Mod+Shift+6 { move-column-to-workspace 6; }
-    Mod+Shift+7 { move-column-to-workspace 7; }
-    Mod+Shift+8 { move-column-to-workspace 8; }
-    Mod+Shift+9 { move-column-to-workspace 9; }
+    Mod+Ctrl+1 { move-column-to-workspace 1; }
+    Mod+Ctrl+2 { move-column-to-workspace 2; }
+    Mod+Ctrl+3 { move-column-to-workspace 3; }
+    Mod+Ctrl+4 { move-column-to-workspace 4; }
+    Mod+Ctrl+5 { move-column-to-workspace 5; }
+    Mod+Ctrl+6 { move-column-to-workspace 6; }
+    Mod+Ctrl+7 { move-column-to-workspace 7; }
+    Mod+Ctrl+8 { move-column-to-workspace 8; }
+    Mod+Ctrl+9 { move-column-to-workspace 9; }
+    Mod+Tab { focus-workspace-previous; }
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
     Mod+R { switch-preset-column-width; }
@@ -95,13 +113,28 @@ binds {
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+    Mod+Ctrl+F { expand-column-to-available-width; }
     Mod+C { center-column; }
+    Mod+Ctrl+C { center-visible-columns; }
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+    Mod+Shift+Minus { set-window-height "-10%"; }
+    Mod+Shift+Equal { set-window-height "+10%"; }
     Mod+V       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+T { toggle-column-tabbed-display; }
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }
+}
+
+gestures { hot-corners { off; }; }
+overview { workspace-shadow { off; }; }
+
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
 }
