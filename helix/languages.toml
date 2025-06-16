@@ -1,4 +1,6 @@
 [language-server.clangd]
+command = "clangd"
+args = [ "--clang-tidy" ]
 config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
 
 [language-server.emmet]
@@ -18,6 +20,10 @@ roots = [ ".git" ]
 name = "cpp"
 indent = { unit = "\t", tab-width = 4 }
 roots = [ ".git" ]
+
+[[language]]
+name = "css"
+auto-format = false
 
 [[language]]
 name = "html"
