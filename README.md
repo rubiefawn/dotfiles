@@ -4,10 +4,10 @@
 
 | Function | Package(s) |
 |----------|------------|
-| Wayland compositor | [niri](https://github.com/YaLTeR/niri), [swayfx](https://github.com/willpower3309/swayfx), [hyprland](https://github.com/hyprwm/Hyprland) |
+| Wayland compositor | [niri](https://github.com/YaLTeR/niri) |
 | Text editor | [helix](https://github.com/helix-editor/helix) |
 | Terminal emulator | [foot](https://codeberg.org/dnkl/foot), [ghostty](https://github.com/ghostty-org/ghostty) |
-| Shell | [ksh](https://github.com/ibara/oksh), [nushell](https://github.com/nushell/nushell) |
+| Shell | [nushell](https://github.com/nushell/nushell) |
 | Application launcher | [fuzzel](https://codeberg.org/dnkl/fuzzel) |
 | Display manager | [ly](https://github.com/fairyglade/ly) |
 | Wallpaper manager | [swww](https://github.com/LGFae/swww) |
