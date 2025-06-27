@@ -10,4 +10,9 @@ $env.FCEDIT = $env.config.buffer_editor
 def --wrapped e [...args] { ^$env.config.buffer_editor ...$args }
 def --wrapped e. [...args] { ^$env.config.buffer_editor . ...$args }
 
+alias la = ls -a
+alias ll = ls -l -a
+alias y = yazi
+alias cat = bat -pp
+
 $env.PROMPT_COMMAND_RIGHT = {||}
