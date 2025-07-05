@@ -1,4 +1,5 @@
 [advice]
+	addEmptyPathSpec = false
 	pushNonFastForward = false
 [pretty]
 	nice = %C(yellow bold)%h %C(cyan)%ar %C(reset)%C(dim bold)%an%n%C(reset)%w(76,2,2)%s
@@ -6,7 +7,9 @@
 [commit]
 	template = ~/.gitmessage
 [core]
+	compression = 9
 	eol = lf
+	whitespace = error
 [diff]
 	external = difft
 [push]
@@ -29,3 +32,7 @@
 	f = fetch --all --prune
 	pf = push --force-with-lease
 	this = d --cached @
+[url "https://github.com/"]
+	insteadOf = "gh:"
+[url "https://codeberg.org/"]
+	insteadOf = "cb:"
