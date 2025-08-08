@@ -23,11 +23,12 @@ roots = [ ".git" ]
 
 [[language]]
 name = "css"
+indent = { unit = "\t", tab-width = 2 }
 auto-format = false
 
 [[language]]
 name = "html"
-# indent = { unit = "\t", tab-width = 2 } # https://github.com/kristoff-it/superhtml/issues/46
+indent = { unit = "\t", tab-width = 2 } # https://github.com/kristoff-it/superhtml/issues/46
 language-servers = [ "superhtml", "emmet" ]
 
 [[language]]

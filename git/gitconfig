@@ -9,7 +9,6 @@
 [core]
 	compression = 9
 	eol = lf
-	whitespace = error
 [diff]
 	external = difft
 [push]
