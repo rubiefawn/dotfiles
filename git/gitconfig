@@ -9,25 +9,19 @@
 [core]
 	compression = 9
 	eol = lf
-[diff]
-	external = difft
 [push]
 	autoSetupRemote = true
 	recurseSubmodules = on-demand
 [init]
 	defaultBranch = main
-[show]
-	external = difft
-[submodule]
-	recurse = true
 [alias]
 	c = commit
-	l = log --pretty=nice --ext-diff --find-copies
+	l = log --pretty=nice --find-copies
 	lb = l origin..
-	d = diff --ext-diff -b --ignore-blank-lines --ignore-space-at-eol --find-copies
+	d = diff -b --ignore-blank-lines --ignore-space-at-eol --find-copies
 	db = d origin...
 	b = blame -C --color-by-age
-	s = show --pretty=nice --ext-diff
+	s = show --pretty=nice
 	f = fetch --all --prune
 	pf = push --force-with-lease
 	this = d --cached @
