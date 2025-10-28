@@ -46,9 +46,10 @@ layout {
     insert-hint { color "#809eff"; }
 }
 
+// spawn-at-startup "ghostty" "--gtk-single-instance=true" "--quit-after-last-window-closed=false" "--initial-window=false"
 spawn-at-startup "foot"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww-randomize ~/Pictures/Wallpapers 120"
+spawn-at-startup "swww-randomize" "~/Pictures/Wallpapers 120"
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/screenshot %Y-%m-%d %H-%M-%S.png"
 
@@ -61,7 +62,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return { spawn "foot"; }
-    Mod+Ctrl+Return { spawn "ghostty"; }
+    // Mod+Ctrl+Return { spawn "ghostty" "--gtk-single-instance=true"; }
     Mod+Space { spawn "fuzzel"; }
     Mod+Period { spawn "bemoji" "--type" "--noline"; }
     //TODO: Mod+Shift+L to lock screen
@@ -129,6 +130,14 @@ binds {
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "-q" "s" "+5%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "-q" "s" "5%-"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+" "-l" "1.0"; }
+    XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    // XF86AudioPlay allow-when-locked=true {}
+    // XF86AudioPrev allow-when-locked=true {}
+    // XF86AudioNext allow-when-locked=true {}
 }
 
 gestures { hot-corners { off; }; }
