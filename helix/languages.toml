@@ -47,3 +47,7 @@ indent = { unit = "\t", tab-width = 4 }
 [[language]]
 name = "rust"
 indent = { unit = "\t", tab-width = 4 }
+
+[[language]]
+name = "xml"
+indent = { unit = "\t", tab-width = 2 }
