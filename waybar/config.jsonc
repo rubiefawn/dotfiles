@@ -1,64 +1,92 @@
-// -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": [
-        "hyprland/workspaces"
-    ],
-    "modules-center": [],
-    "modules-right": [
-        "pulseaudio",
-        "network",
-        "battery",
-        "clock",
-        "tray",
-    ],
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
+  "reload_style_on_change": true,
+  "layer": "top",
+  "position": "top",
+  "spacing": 6,
+  "modules-left": ["niri/workspaces", "niri/window"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    // "bluetooth",
+    // "cpu",
+    "network",
+    "backlight",
+    "pulseaudio",
+    "battery"
+    // "custom/power",
+  ],
+
+  "clock": {
+    "format-alt": "{:L%A W%V}",
+    "interval": 1,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%Y-%m-%d %H:%M:%S}"
+    
+  },
+  "network": {
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰀂",
+    "format-disconnected": "󰤮",
+    "tooltip-format-wifi": "{essid}\n{ipaddr}/{cidr}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 3,
+  },
+  "battery": {
+    "format": "{icon}",
+    // "format-discharging": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
-    "clock": {
-        // "timezone": "America/New_York",
-        "interval": 1,
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%Y-%m-%d %H:%M:%S} 🕰️"
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ⚡",
-        "format-plugged": "{capacity}% 🔌",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["🪫", "🔋"]
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) 🛜",
-        "format-ethernet": "{ipaddr}/{cidr} 🌐",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-disconnected": "Disconnected ⚠️",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-muted": "🔇 {format_source}",
-        "format-source": "{volume}% 🎙️",
-        "format-source-muted": "🤫",
-        "format-icons": {
-            "default": ["🔈", "🔉", "🔊"]
-        },
-        "on-click": "pavucontrol"
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    "on-click": "omarchy-menu power",
+    "states": {
+      "warning": 20,
+      "critical": 10
     }
+  },
+  // "bluetooth": {
+  //   "format": "",
+  //   "format-disabled": "󰂲",
+  //   "format-connected": "",
+  //   "tooltip-format": "Devices connected: {num_connections}",
+  //   "on-click": "blueberry"
+  // },
+  // 
+  "backlight": {
+      "format": "{icon}",
+      "format-icons": ["", "", "", "", "", "", "", "", ""],
+      "tooltip-format": "Screen brightness {percent}%",
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    // "on-click": "$TERMINAL --class=Wiremix -e wiremix",
+    // "on-click-right": "pamixer -t",
+    "tooltip-format": "Playing at {volume}%",
+    "scroll-step": 5,
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+
+  // "custom/power": {
+  //   "format" : "⏻ ",
+  //   "tooltip": false,
+  //   "menu": "on-click",
+  //   "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+  //   "menu-actions": {
+  //     "shutdown": "shutdown",
+  //     "reboot": "reboot",
+  //     "suspend": "systemctl suspend",
+  //     "hibernate": "systemctl hibernate"
+  //   }
+  // }
 }

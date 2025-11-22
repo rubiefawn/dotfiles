@@ -9,7 +9,7 @@ input {
 
 layout {
     background-color "transparent"
-    gaps 24
+    gaps 16
     default-column-display "tabbed"
     center-focused-column "never"
     preset-column-widths {
@@ -36,7 +36,7 @@ layout {
     tab-indicator {
         place-within-column
         hide-when-single-tab
-        width 6
+        width 4
         gap 8
         corner-radius 3
         gaps-between-tabs 8
@@ -48,6 +48,7 @@ layout {
 
 // spawn-at-startup "ghostty" "--gtk-single-instance=true" "--quit-after-last-window-closed=false" "--initial-window=false"
 spawn-at-startup "foot"
+spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww-randomize" "~/Pictures/Wallpapers 120"
 prefer-no-csd
