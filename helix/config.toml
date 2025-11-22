@@ -8,7 +8,7 @@ color-modes = true
 bufferline  = "multiple"
 text-width  = 120
 mouse       = false
-rulers      = [ 72, 120 ]
+rulers      = [ 72, 80, 120 ]
 shell = [ "nu", "-c" ]
 
 [editor.cursor-shape]
