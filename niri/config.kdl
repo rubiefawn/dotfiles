@@ -1,4 +1,5 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration
+include "local.kdl"
 
 input {
     keyboard { numlock; xkb { options "caps:escape"; }; }
