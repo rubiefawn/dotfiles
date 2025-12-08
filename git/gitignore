@@ -3,3 +3,4 @@ Thumbs.db
 
 # Clang cache
 .cache/
+compile_commands.json
